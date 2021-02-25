@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=pedimento.numIntegracion  %> </title>
+</head>
+<body>
+    <h1>Pedimento: <%=pedimento.pedimento  %></h1>
+    <a href="/main/<%= pedimento._id%>/editar">EDITAR</a>
+    <ul>
+            <li>Numero de integracion: <%= pedimento.numIntegracion %></li> 
+            <li>Contenedor: <%= pedimento.contenedor %></li> 
+            <li>Cliente: <a href="/main?cliente=<%= pedimento.cliente %>"><%= pedimento.cliente %></a></li> 
+            <li>Fecha: <%= pedimento.fecha %></li> 
+            <li>Estado: <%= pedimento.estado %></li> 
+    </ul>
+    <a href="/main">REGRESAR</a>
+    <form action="/main/<%=pedimento._id%>?_method=DELETE" method="POST">
+        <button>ELIMINAR</button>
+    </form>
+</body>
+</html>

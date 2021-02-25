@@ -1,0 +1,131 @@
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #0044ff0c;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.menuSuperior{
+    display: flex;
+    padding: 5px 0px 5px 10px;
+    max-width: 790px;
+    flex-direction: row;
+    border-style: none none solid ;
+    border-radius: 3px;
+    border-color: #3a4575;
+    /* borra lo de abajo para que no se centre*/
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+
+.contenedorGral{
+    background-color: #e1ecf8;
+    display: flex;
+flex-direction: column;
+max-width: 800PX;
+border-radius: 5px;
+border-style: solid solid solid;
+border-color: #081033;
+margin-bottom: 17px;
+margin-top: 7px;
+margin-left: 15px;
+
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    /*    border-color: #adb0bd;
+    border-style: none none solid;*/
+    background-color: #081033;
+}
+.barra span{
+    color: white;
+    font-size: small;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.barra .botonesBarra{
+    display: flex;
+    flex-direction: row;
+  /* background-color: rgb(235, 44, 44); */
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #1b1b14;
+    padding-top: 2px;
+}
+.barra #buttonBorrar{
+    margin-right:1px ;
+    width: 25px;
+    color: #ffffff;
+    border-radius: 0px;
+    background: none;
+    border-style: none;
+    border-color:#968c7b3a ;
+    transition: background-color .5s;
+}
+.barra #buttonMinP{
+    width: 25px;
+    color: #ffffff;
+    border-radius: 0px;
+    background: none;
+    border-style: none;
+    border-color:#968c7b3a ;
+    transition: background-color .5s;
+}
+.barra #buttonEditar{
+    width: 25px;
+    color: #ffffff;
+    border-radius: 0px;
+    background: none;
+    border-style: none;
+    border-color:#968c7b3a ;
+    transition: background-color .5s;
+}
+.barra #buttonBorrar:hover{
+    color: #500a05;
+    border-color:#f3ada852 ;
+    background-color:#ee4c4185 ;
+}
+.barra #buttonEditar:hover{
+    color: #4e3505;
+    border-color:#f3ada852 ;
+    background-color:#6e4d10 ;
+}
+.barra #buttonMinP:hover{
+    color: #03206e;
+    border-color:#dbb87a52 ;
+    background-color:#80bdf783 ;
+}
+
+.contenedorPrimero{
+max-width: 800PX;
+border-radius: 10px;
+}
+.barraResult{
+    display: flex;
+    flex-direction: row;
+    /*    border-color: #adb0bd;
+    border-style: none none solid;*/
+    background-color: #060d29;
+    color:blanchedalmond;
+    transition: background-color .3s;
+}
+.barraResult span{
+    width: 100%;
+    padding-left: 5px;
+    font-size: 12px;
+    cursor:pointer;
+}
+.barraResult:hover{
+background-color: #081033;
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGREGAR NUEVO</title>
+</head>
+<body>
+    <h1>agregar pedimento:</h1>
+    <a href="/main">REGRESAR</a><br><br>
+    <form action="/main" method="POST">
+        <label for="numeroInt">Numero de integracion:</label>
+        <input type="number" name="numIntegracion" id="numeroInt" placeholder="Numero de integracion">
+        <label for="clienteSelector">Cliente:</label>
+        <select name="cliente" id="clienteSelector">
+        <option value="clienteUno">Primer cliente</option>
+        <option value="clienteDos">Segundo cliente</option>
+        <option value="clienteTres">Tercer cliente</option>
+        </select>    
+        <button>CAPTURAR</button>
+    </form>
+</body>
+</html>
